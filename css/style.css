@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background-color: #fff;
+}
+
+@media (min-width: 400px) {
+
+}
+
+header {
+    margin: auto;
+    height: 100vh;
+    background-color: #242423;
+
+}
+
+.text-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.menu {
+    background: rgb(255,206,0);
+    /* background: linear-gradient(90deg, rgba(255,206,0,1) 0%, rgba(255,154,0,1) 100%); */
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+}
+
+.menu-flex {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.logo-header {
+    width: auto;
+    height: 50px;
+    padding-left: 15px;
+    background-color: #1f1f1f;
+    padding-right: 15px;
+}
+
+.menu ul {
+    /*! margin-right: 20px; */
+    display: flex;
+    justify-content: space-around;
+    
+}
+.menu li{
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: #242423;
+    /*! background-color: aqua; */
+    padding: 10px 20px;
+    transition: 0.2s;
+    font-size: 1.3em;
+}
+
+.menu a:hover {
+    background-color: #232323;
+    color: rgb(255,206,0);
+}
+
+
+
+/* .site-subtitle {
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+    animation: ani_entrada 2s forwards;
+} */
+
+@keyframes ani_entrada {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* 
+.site-title {
+    font-family: 'Kalam', cursive;
+    font-weight: 400;
+    font-size: 3em;
+} */
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    /*! width: 100px; */
+    justify-content: center;
+    animation: ani_entrada 2s forwards;
+}
+
+.logo-titulo img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+}
+
+/* .site-subtitle {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 1.6em;
+} */
+
+@media (min-width:1200px) {
+    .logo-header {
+        height: 55px;
+    }
+
+    .logo-titulo img{
+        width: auto;
+        height: auto;
+    }
+    .menu a {
+        font-size: 1.8em;
+    }
+
+}
+
+#sobre {
+    padding: 50px 0;
+    padding-bottom: 10px;
+    /* border: solid 3px; */
+    border-radius: 10px;
+    background-color: #f2f2f2;
+}
+
+
+.txt_sobre {
+    padding-right: 50px;
+}
+
+.txt_sobre p {
+    padding-bottom: 10px;
+}
+
+.txt_sobre .name {
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    
+}
+.avatar img {
+    width: 300px;
+    margin-bottom: 0px;
+    /* clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%); */
+}
+
+.avatar::after {
+    content: '';
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 310px;
+    height: 290px;
+    border: solid 2px rgb(255,206,0);
+    top: -301px;
+    margin-bottom: -295px;
+
+}
+
+
+.sobre_section .avatar {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.cursos_container,
+.sobre_container {
+    padding: 15px;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sobre_container p {
+    padding-bottom: 15px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+#sobre .link_alura {
+    padding: 3px;
+    color: rgb(255,206,0);
+    background-color: #1f1f1f;
+    text-decoration: none;
+    animation: 0.5s ease-in-out;
+}
+
+#sobre .link_alura:hover {
+    background-color: rgb(255,206,0);
+    color: #1f1f1f;
+}
+
+#sobre h2,
+.contato h2,
+.portfolio h2,
+.cursos h2 {
+    text-align: center;
+    margin-left: auto;
+    font-size: 2em;
+    font-weight: 700;
+    /*! margin-top: 5px; */
+}
+@media (min-width: 700px) {
+    .avatar img {
+        width: 250px;
+        /* clip-path: polygon(0 80%, 20% 100%, 100% 100%, 100% 20%, 80% 0, 0 0); */
+    }
+    .avatar::after {
+        content: '';
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 255px;
+        height: 240px;
+        border: solid 2px rgb(255,206,0);
+        top: -251px;
+        margin-bottom: -255px;
+    
+    }
+
+    .sobre_section .avatar {
+        float: right;
+        margin-left: 30px;
+    }
+
+    .sobre_container {
+        padding: 30px;
+    }
+}
+@media (min-width: 1000px) {
+    .avatar img {
+        width: 300px;
+        /* clip-path: polygon(0 80%, 20% 100%, 100% 100%, 100% 20%, 80% 0, 0 0); */
+    }
+
+    .avatar::after {
+        content: '';
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 305px;
+        height: 289px;
+        border: solid 2px rgb(255,206,0);
+        top: -300px;
+        margin-bottom: -200px;
+    
+    }
+
+    .sobre_section .avatar {
+        float: right;
+        margin-left: 30px;
+
+    }
+    
+    .sobre_container {
+        padding: 30px;
+    }
+}
+
+.portfolio {
+    background: #1f1f1f;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.img-portfolio {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.2s;
+}
+
+.img-portfolio:hover{
+    transform: scale(1.1) rotateZ(-1deg);
+}
+
+.portfolio h2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.portfolio .grid{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    gap: 5vw;
+}
+@media (min-width:700px) {
+    .portfolio .grid{
+        grid-template-columns: 300px 300px;
+    }
+}
+
+.portfolio figure {
+    text-align: center;
+}
+
+/* Cursos */
+.cursos {
+    background-color: #f2f2f2;
+
+}
+/* contato */
+
+.contato {
+    background-color: #232323;
+}
+
+.contato h2 {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.grid.icons {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.grid.icons a {
+    color: #fff;
+    padding: 10px;
+    font-size: 2em;
+    
+}
+.grid.icons a:active,
+.grid.icons a:hover {
+    color: rgb(255,206,0);
+    transform: scale(1.1);
+    text-shadow: 0px 0px 1px rgba(255, 206, 0, 0.5);
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    background-color:#232323;
+    color: white;
+    justify-content: center;
+}
+
+footer p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #232323;
+    font-style: none;
+    background-color: rgb(255,206,0);
+}
